@@ -145,7 +145,7 @@ class RemoteContentFetcher implements \Psr\Log\LoggerAwareInterface
 		return $data;
 	}
 
-	public function setLogger(LoggerInterface $logger)
+	public function setLogger(LoggerInterface $logger): void
 	{
 		$this->logger = $logger;
 	}
